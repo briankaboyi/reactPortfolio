@@ -1,0 +1,428 @@
+:root {
+  margin: 0;
+  padding: 0;
+  --white: #fff5ee;
+  --blackLite: #333333a2;
+  --black: #191919;
+}
+@font-face {
+  font-family: proximaRegular;
+  src: url(./assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf);
+ 
+}
+@font-face {
+  font-family: proximaBold;
+  src: url(./assets/fonts/Fontspring-DEMO-proximanova-bold.otf);
+}
+@font-face {
+  font-family: proximaLight;
+  src: url(./assets/fonts/FontsFree-Net-Proxima-Nova-Light.otf);
+}
+@font-face {
+  font-family: sofia;
+  src: url(./assets/fonts/sofiapro-light.otf);
+}
+@font-face {
+  font-family: sofiaBold;
+  src: url(./assets/fonts/SofiaProBold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#container,
+.nav-item,
+.social,
+.social a,
+.list,
+#side,
+#main-div,
+.content-box,
+.skill-list,
+.about-content,
+.skill-list .details,
+#nav {
+  display: flex;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#side {
+  box-sizing: border-box;
+  width: 35%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #fff5ee;
+  padding: 50px 0px 10px 50px;
+}
+
+#main-div {
+  width: 65%;
+  background: var(--black);
+  overflow-y: scroll;
+}
+.name {
+  font-family: sofiaBold;
+  font-size: 5.5svh;
+  font-weight: 900;
+  color: var(--black);
+  align-self: flex-start;
+}
+.list {
+  font-family: proximaRegular;
+  font-size: 2svh;
+  color: #3333336b;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.list-item {
+  margin: 0px;
+}
+#nav {
+  
+
+  flex-direction: column;
+  gap: 1.5vsw;
+  padding: 0px;
+}
+#nav li {
+  list-style-type: decimal-leading-zero;
+  color: var(--blackLite);
+}
+.nav-item {
+  box-sizing: border-box;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
+  width: fit-content;
+  height: fit-content;
+  border-bottom: 2px solid var(--white);
+  transition: border ease-in 250ms;
+}
+.nav-item p {
+  margin: 0;
+  font-family: proximaRegular;
+  font-size: 3svh;
+}
+
+.nav-item:hover,
+.social a:hover {
+  color: black;
+  border-bottom: 2px solid var(--black);
+}
+.nav-item:nth-of-type(2) {
+  border-top: 1px solid var(--blackLite);
+  border-bottom: 1px solid var(--blackLite);
+}
+.social {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: start;
+  margin-bottom: 0px;
+  gap: 10px;
+  flex: wrap;
+}
+
+.social img {
+  height: 15svh;
+  margin-right: 25px;
+  border-radius: 50%;
+
+  filter: drop-shadow(5px 20px 5px #2222228a);
+}
+.social a {
+  text-decoration: none;
+  font-family: proximaRegular;
+  color: var(--blackLite);
+  letter-spacing: 4px;
+  font-size: 1.5svh;
+  align-items: center;
+  margin-right: 15px;
+  transition: border ease 250ms;
+  border-bottom: 2px solid #ffffff00;
+}
+.social svg {
+  font-size: 2svh;
+  margin-right: 10px;
+  fill: var(--blackLite);
+}
+
+#main-div {
+  flex-direction: column;
+  height: 100vh;
+  color: var(--white);
+  background: #000;
+  padding: 50px 40px 50px 40px;
+  background-image: url("./assets/images/space.png");
+  background-attachment: fixed;
+  background-position: top 50px right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content-box {
+  flex-direction: column;
+  align-items: start;
+}
+
+#one .title {
+  font-size: 45px;
+  font-family: proximaRegular;
+  margin-bottom: 70px;
+}
+.html-img {
+  position: sticky;
+  opacity: 0.3;
+  top: 0px;
+  right: -180px;
+  width: 90svh;
+  z-index: -999;
+  transform: scaleX(-1);
+}
+h2 {
+  font-family: proximaLight;
+
+  font-size: 25px;
+  font-weight: 100;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 40px 0px 30px;
+  color: #ffffff;
+}
+.about-content p,
+.content-box li {
+  font-size: 2svh;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin-bottom: 80px;
+  color: #ffffffaf;
+}
+.content-box p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#one .about-content {
+  border: 1px;
+  flex-direction: column;
+  background: #191919da;
+  width: 96%;
+  margin: 10px 0px;
+  padding: 20px;
+  align-items: start;
+  justify-content: stretch;
+  gap: 0px;
+  border-radius: 10px;
+  transition: all ease 250ms;
+  font-family: proximaRegular;
+}
+
+.skill-list {
+  border: 1px;
+  background: #191919ef;
+  width: 96%;
+  margin: 10px 0px;
+  height: fit-content;
+  padding: 20px;
+
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: all ease 250ms;
+}
+
+.skill-img {
+  height: 19vmin;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  filter: grayscale(100%) invert();
+}
+.skill-list:hover {
+  background: rgba(0, 255, 255, 0.207);
+}
+#one .title,
+#two .title,
+#three .title {
+  font-family: proximaRegular;
+  font-size: 4svh;
+}
+#two {
+  height: 50vh;
+  padding-bottom: 70px;
+}
+#two .tag {
+  font-family: Arial, Helvetica, sans-serif;
+
+  letter-spacing: 4px;
+  font-size: 1.4svh;
+  padding: 4px 5px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+#two .name {
+  position: relative;
+  top: 20px;
+  letter-spacing: 3px;
+  font-size: 6svh;
+  color: #fff;
+  font-family: sofiaBold;
+  margin: 0px;
+}
+#two .description {
+  font-family: proximaLight;
+  font-size: 2svh;
+}
+.details {
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: start;
+  padding: 0px;
+  gap: 20px;
+}
+#three {
+  font-family: proximaRegular;
+  height: 100vh;
+  /* padding: 0px 0px 150px; */
+
+  justify-content: start;
+  background: linear-gradient(#000, #0000003b), url(./assets/images/moon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 140px; */
+}
+#three .html-img {
+  /* position: fixed; */
+  opacity: 0.3;
+  top: 0px;
+  left: 1000px;
+  width: 900px;
+  z-index: -999;
+  transform: scaleX(-1);
+}
+#three .title {
+  margin-bottom: 30px;
+}
+#three .quote {
+  font-style: italic;
+  font-size: 2svh;
+  color: #ffffffaf;
+  margin-bottom: 20svh;
+}
+#three a {
+  text-decoration: none;
+  color: aqua;
+}
+#three .social svg {
+  fill: aqua;
+  font-size: 2.5svh;
+  margin-right: 30px;
+}
+#three .social a {
+  color: var(--white);
+}
+/* #three img {
+  position: absolute;
+  z-index: -999;
+  bottom: -130px;
+  left: 140px;
+
+  opacity: 0.2;
+} */
+#three .description {
+  font-size: 2svh;
+  font-family: proximaRegular;
+  
+}
+#three .end {
+  margin-bottom: 40px;
+}
+.end p {
+  margin-bottom: 20px;
+}
+.end p:nth-of-type(1) {
+  font-style: italic;
+}
+.end p:nth-of-type(2) {
+  font-size: 2.5svh;
+  font-family: proximaRegular;
+}
+/* ///////////////////// */
+.hidden {
+  display: none;
+}
+.active {
+  border-bottom: 5px solid var(--black);
+}
+.content-box {
+  transition: all ease-in 500ms;
+
+  animation: reveal 1s forwards;
+  /* transition-timing-function: cubic-bezier(0.235, 0.73, 0.46, 0.96); */
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 850px) {
+  #three {
+    background-size: contain;
+    background-position: 0px;
+  }
+  #main-div {
+    padding: 50px 20px;
+  }
+  .content-box {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #burger {
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    height: fit-content;
+    width: 41px;
+    /* display: none; */
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+  }
+  #burger .line {
+    width: 33px;
+    height: 3px;
+    background: var(--white);
+    margin: 8px;
+  }
+  #side {
+    position: absolute;
+    transition: all 1s ease;
+    z-index: 999;
+    width: 60vw;
+  }
+  #main-div {
+    width: 100%;
+  }
+  .open {
+    left: 0px;
+  }
+  .closed {
+    left: -60vw;
+  }
+}
