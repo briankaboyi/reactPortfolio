@@ -80,17 +80,6 @@ export default function Skills() {
         <div class="skill-list">
           <div class="details">
             <p class="tag">BACKEND</p>
-            <p class="name">C</p>
-            <p class="description">
-              The granddaddy of languages, coding like a boss since the '70s.
-            </p>
-          </div>
-          <img src="./images/c.png" alt="" class="skill-img" />
-        </div>
-
-        <div class="skill-list">
-          <div class="details">
-            <p class="tag">BACKEND</p>
             <p class="name">ELIXIR</p>
             <p class="description">
               Potion crafting for scalable, fault-tolerant, and magical backend
@@ -122,6 +111,7 @@ export default function Skills() {
           </div>
           <img src="./images/xd.png" alt="" class="skill-img" />
         </div>
+        <div style="height:190px"></div>
       </div>
     </>
   );

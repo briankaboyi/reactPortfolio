@@ -8,7 +8,6 @@
 @font-face {
   font-family: proximaRegular;
   src: url(./assets/fonts/Fontspring-DEMO-proximanovacond-regular.otf);
- 
 }
 @font-face {
   font-family: proximaBold;
@@ -49,6 +48,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  padding: 0;
 }
 #side {
   box-sizing: border-box;
@@ -85,8 +85,6 @@ body {
   margin: 0px;
 }
 #nav {
-  
-
   flex-direction: column;
   gap: 1.5vsw;
   padding: 0px;
@@ -338,7 +336,6 @@ h2 {
 #three .description {
   font-size: 2svh;
   font-family: proximaRegular;
-  
 }
 #three .end {
   margin-bottom: 40px;
