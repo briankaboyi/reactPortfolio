@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 export function Aside() {
-  const [clicked, setClicked] = useState("About");
-  function handleClick(e) {
-    setClicked(e.target.innerText);
+  const [hidden, setHidden] = useState("closed");
+
+  function handleClick() {
+    (hidden === "closed")
+      ? setHidden("open")
+      : setHidden("closed");
+
   }
-  console.log(clicked);
 
   return (
-    <div id="side" className="closed">
+    <div id="side" className={hidden}>
       {/* burger component */}
-      <div className="burger">
+      <div id="burger" onClick={() => handleClick()}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
@@ -26,26 +29,21 @@ export function Aside() {
       {/*  */}
       <ol id="nav">
         <li id="about-btn">
-          <Link className="nav-item about" to={"about"}>
+          <Link className="nav-item about" onClick={()=>setHidden("closed")} to={"about"}>
             {" "}
             <p>About</p>
           </Link>
         </li>
         <li id="skills-btn ">
-            <Link className="nav-item skills" to={"projects"}>
+          <Link className="nav-item skills" onClick={()=>setHidden("closed")} to={"projects"}>
             <p>Skills</p>
-
-            </Link>
-         
-          
+          </Link>
         </li>
 
         <li id="contact-btn">
-            <Link className="nav-item contact" to={"contact"}>
-
+          <Link className="nav-item contact" onClick={()=>setHidden("closed")} to={"contact"}>
             <p>Contact Me</p>
-            </Link>
-          
+          </Link>
         </li>
       </ol>
       {/*  */}
