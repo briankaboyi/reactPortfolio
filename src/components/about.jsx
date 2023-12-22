@@ -3,10 +3,10 @@ import React from 'react'
 function About() {
   return (
     <>
-    <div id="one" class="content-box">
+    <div id="one" className="content-box">
 
-<p class="title">Unleashing Code and Chaos</p>
-<div class="about-content">
+<p className="title">Unleashing Code and Chaos</p>
+<div className="about-content">
   <h2>What I Do</h2>
   <p>
     Im not your average developer; I'm the cool cat who makes websites
@@ -15,7 +15,7 @@ function About() {
     deserves.
   </p>
 </div>
-<div class="about-content">
+<div className="about-content">
   <h2>Skills:</h2>
   <p>
     JavaScript, HTML, CSS – I speak these languages fluently. React
@@ -24,7 +24,7 @@ function About() {
     language, like a data whisperer.
   </p>
 </div>
-<div class="about-content">
+<div className="about-content">
   <h2>Why Choose Me:</h2>
   <p>
     I bring humor to error messages and joy to debugging sessions.
@@ -32,7 +32,7 @@ function About() {
     jokes that make even servers laugh. 🤖😂
   </p>
 </div>
-<div class="about-content">
+<div className="about-content">
   <h2>Fun Facts:</h2>
   <ul>
     <li>

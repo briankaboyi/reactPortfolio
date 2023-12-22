@@ -3,23 +3,23 @@ import React from 'react'
 export default function Contact() {
   return (
     <>
-     <div id="three" class="content-box">
-          <p class="title">Connect With Me</p>
-          <p class="quote">
+     <div id="three" className="content-box">
+          <p className="title">Connect With Me</p>
+          <p className="quote">
             Let's make the internet a better place, one line of code at a time.
           </p>
-          <p class="description">
+          <p className="description">
             Reach out on <a href="#">Github</a>, shoot me an email at <br />
             <a href="#">briankaboyi@gmail.com</a> , or lets connect on
             <a href="#">LinkedIn</a>
           </p>
           <p>Cheers to coding and creating wonders together!</p>
-          <div class="end">
+          <div className="end">
             <p>Happy coding,</p>
             <p>Brian Kaboyi</p>
           </div>
 
-          <div class="social">
+          <div className="social">
             <a href="https://github.com/briankaboyi"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"

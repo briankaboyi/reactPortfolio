@@ -8,7 +8,7 @@ export function Aside() {
   console.log(clicked);
 
   return (
-    <aside className="side closed">
+    <div id="side" className="closed">
       {/* burger component */}
       <div className="burger">
         <div className="line"></div>
@@ -51,7 +51,7 @@ export function Aside() {
       {/*  */}
       <div className="social">
         <img
-          src="../assets/images/avatar.png"
+          src="/images/avatar.png"
           alt="profile-picture"
           className="avatar"
         />
@@ -77,6 +77,6 @@ export function Aside() {
           Email
         </a>
       </div>
-    </aside>
+    </div>
   );
 }
